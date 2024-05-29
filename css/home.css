@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+}
+
+#collapisibleNavbar {
+  justify-content: space-between;
+}
+.navbar {
+  font-size: 30px;
+  position: fixed;
+  background-color: transparent;
+  z-index: 1000;
+  width: 100%;
+}
+.navbar-brand {
+  font-size: 40px;
+}
+.material-symbols-outlined {
+  font-size: 36px;
+}
+.nav-link {
+  color: rgb(255, 255, 255);
+}
+.nav-link:hover {
+  color: orange;
+}
+.headerImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+}
+
+.Header-text {
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.details-box {
+  position: relative;
+  z-index: 4;
+  color: #ffffff;
+  padding: 75px 0;
+  text-align: center;
+  display: none;
+}
+
+.image-Header-Div {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.Text-p-Header {
+  font-size: 2rem;
+  font-family: serif;
+}
+
+.Text-h1-Header {
+  font-family: serif;
+  font-size: 5.5rem;
+}
+.shopNowBtn {
+  font-size: 24px;
+  color: #ffffff;
+  border: 1px solid white;
+}
+.shopNowBtn:hover {
+  background-color: #ffffff52;
+  color: black;
+}
+
+@media screen and (max-width: 1220px) {
+  .rightNav {
+    display: none;
+  }
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.651);
+  }
+}
+
+.trendingText {
+  font-family: serif;
+  font-size: 4.5rem;
+  font-weight: bold;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+.trendingText:hover {
+  color: orange;
+}
+.img-trendingCover {
+  display: none;
+}
+
+.image-trending-div {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.img-trending {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.img-trendingCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.tickIcon {
+  display: none;
+}
+.item-Added-Alert {
+  position: fixed;
+  top: 20%;
+  right: 1%;
+  z-index: 2000;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  justify-content: space-around;
+  display: none;
+}
+@media (min-width: 1400px) {
+  .item-Added-Alert {
+    max-width: 578px;
+  }
+}
+.crossIcon {
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.item-Added-Favorite {
+  position: fixed;
+  top: 29%;
+  right: 1%;
+  z-index: 2000;
+  text-align: center;
+  padding: 20px;
+  background-color: orange;
+  color: rgb(255, 255, 255);
+  justify-content: space-around;
+  display: none;
+}
+
+.trendingJeweleryRow {
+  margin-top: 120px;
+}
+.categoryUL {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.categoryUL li a {
+  text-decoration: none;
+  font-size: x-large;
+}
+.categoryUL li a:hover {
+  color: orange;
+}
+.activecategory {
+  color: orange;
+  background-color: var(--bs-btn-active-bg);
+  border-color: var(--bs-btn-active-border-color);
+}
+
+@media screen and (max-width: 960px) {
+  .categoryUL {
+    display: inline;
+  }
+}
+
+.loadMoreBtn {
+  font-size: 30px;
+}
+.loadMoreBtn:hover {
+  transform: scale(1.1);
+}
+.rareImages {
+  width: 100%;
+  height: 900px;
+}
+.rareImageText {
+  font-size: 30px;
+}
+.rareParagraph {
+  font-size: 20px;
+}
+.AddToCartRare:hover {
+  background-color: rgba(255, 166, 0, 0.678);
+  color: #ffffff;
+}
+.BuyWithRare {
+  background-color: orange;
+  color: #ffffff;
+}
+
+@media (min-width: 1400px) {
+  .item-Added-Favorite {
+    max-width: 578px;
+  }
+  .categoryContainr {
+    max-width: 2070px;
+  }
+  .rareContainer {
+    max-width: 1900px;
+  }
+  .footerContainer {
+    max-width: 1990px;
+  }
+  .cartInnerContainer {
+    max-width: 710px;
+  }
+}
+
+.rare1,
+.rare2,
+.rare3,
+.rare4 {
+  cursor: pointer;
+}
+
+.footerMenu {
+  list-style-type: none;
+  text-align: start;
+  padding-left: 0;
+  margin-top: 35px;
+}
+
+.footerMenu li a {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+}
+
+.footerMenu li a:hover {
+  color: orange;
+}
+
+input {
+  height: 75px;
+}
+.cartContainer {
+  top: 0;
+  right: 0;
+  z-index: 3000;
+  height: 100vh;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.24);
+  display: none;
+}
+
+.cartInnerContainer {
+  right: 0;
+  position: fixed;
+  background-color: #ffffff;
+  height: 100vh;
+  display: none;
+}
+
+.closebtn {
+  cursor: pointer;
+}
+.icon {
+  cursor: pointer;
+}
+.newCartItem {
+  display: none;
+}
